@@ -37,9 +37,6 @@ const EditTodo = ({todo}) => {
             <input type="text" className="form-control" value={description} onChange={e => setDescription(e.target.value)}/>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={() => setDescription(todo.description)}>
-            Close
-          </Button>
           <Button variant="primary" onClick={e => updatefunction(e)}>
             Save Changes
           </Button>
